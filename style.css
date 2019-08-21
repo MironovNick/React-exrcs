@@ -68,3 +68,7 @@ h1, p {
 .fa {
   padding-right: 5px;
 }
+
+.fa:nth-child(4){
+  color: #e7e7e7;
+}
