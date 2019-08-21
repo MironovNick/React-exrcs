@@ -37,7 +37,7 @@ class App extends Component {
       <Button kind = "info" text = "info" rad = {4}/>
       <Button kind = "warning" text = "warning" rad = {8}/>
       <Button kind = "danger" text = "danger" rad = {12}/>
-      <Button kind = "default" text = "default" rad = {50}/>
+      <Button kind = "default" text = "default" rad = {}/>
     </div>
 
   );
