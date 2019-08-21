@@ -22,10 +22,12 @@ class App extends Component {
   //}
 }
 
-  const Button = ({ text, kind, rad, ...buttonProps}) => (
+  const Button = ({ text, kind, rad, icon, ...buttonProps}) => (
       <button className = {"btn " + kind} 
       style={{ borderRadius: + rad}}
       {...buttonProps}>
+      <i className = {"fa fa-home"} >
+      </i>
         {text}
       </button>
   );
@@ -33,11 +35,11 @@ class App extends Component {
   const buttons = (
 
     <div>
-      <Button kind = "success" text = "success" rad = {2}/>
+      <Button kind = "success" text = "success" rad = {22} />
       <Button kind = "info" text = "info" rad = {4}/>
       <Button kind = "warning" text = "warning" rad = {8}/>
       <Button kind = "danger" text = "danger" rad = {12}/>
-      <Button kind = "default" text = "default" rad = {}/>
+      <Button kind = "default" text = "default" rad = {50}/>
     </div>
 
   );
