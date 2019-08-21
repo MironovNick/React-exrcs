@@ -9,6 +9,7 @@ h1, p {
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 /* Green */
@@ -57,18 +58,17 @@ h1, p {
 
 /* Gray */
 .default {
-  border-color: #e7e7e7;
-  color: black;
+  border-color: #9c9898;
+  color: #9c9898;
 }
 
 .default:hover {
-  background: #e7e7e7;
+  background: #9c9898;
+  color: white;
 }
 
 .fa {
   padding-right: 5px;
+  
 }
 
-.fa:nth-child(4){
-  color: #e7e7e7;
-}
