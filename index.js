@@ -26,7 +26,7 @@ class App extends Component {
       <button className = {"btn " + kind} 
       style={{ borderRadius: + rad}}
       {...buttonProps}>
-      <i className = {"fa fa-home"} >
+      <i className = {"fa fa-" + icon} >
       </i>
         {text}
       </button>
@@ -35,11 +35,11 @@ class App extends Component {
   const buttons = (
 
     <div>
-      <Button kind = "success" text = "success" rad = {22} />
-      <Button kind = "info" text = "info" rad = {4}/>
-      <Button kind = "warning" text = "warning" rad = {8}/>
-      <Button kind = "danger" text = "danger" rad = {12}/>
-      <Button kind = "default" text = "default" rad = {50}/>
+      <Button kind = "success" text = "success" rad = {2} icon = "home" />
+      <Button kind = "info" text = "info" rad = {4} icon = "bars" />
+      <Button kind = "warning" text = "warning" rad = {8} icon = "trash" />
+      <Button kind = "danger" text = "danger" rad = {12} icon = "close" />
+      <Button kind = "default" text = "default" rad = {50} icon = "folder" />
     </div>
 
   );
