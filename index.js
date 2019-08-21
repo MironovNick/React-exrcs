@@ -42,27 +42,5 @@ class App extends Component {
 
   );
 
-ReactDOM.buttons(<App />, document.getElementById('root'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ReactDOM.render(buttons, document.getElementById('root'));
 
