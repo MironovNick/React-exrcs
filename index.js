@@ -52,5 +52,5 @@ class App extends Component {
 
   );
 
-render(buttons, document.getElementById('root'));
+  render(buttons, document.getElementById('root'));
 
