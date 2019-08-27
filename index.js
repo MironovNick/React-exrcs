@@ -66,7 +66,7 @@ class AlbumsList extends React.Component {
     };
 
   componentDidMount() {
-    fetch("http://jsonplaceholder.typicode.com/albums")
+    fetch("https://jsonplaceholder.typicode.com/albums")
     .then(response => response.json())
     .then(albums => this.setState({ isLoading: false, albums }));
     }
@@ -84,5 +84,5 @@ class AlbumsList extends React.Component {
 }
 
 
-
+render(<AlbumsList />, document.getElementById('root'));
 
