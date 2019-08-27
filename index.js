@@ -58,7 +58,8 @@ class AlbumsList extends React.Component {
     state = {
     isLoading: true,
     isError: false,
-    albums: null
+    albums: null,
+    users: null
     };
   
     onError = error => {
@@ -66,9 +67,14 @@ class AlbumsList extends React.Component {
     };
 
   componentDidMount() {
+   // Promise.all([
     fetch("https://jsonplaceholder.typicode.com/albums")
     .then(response => response.json())
-    .then(albums => this.setState({ isLoading: false, albums }));
+    /*fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(users => this.setState({users}));*/
+    //])
+    .then(albums => this.setState({ isLoading: false, albums }))
     }
 
   render(){
