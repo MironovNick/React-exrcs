@@ -24,7 +24,7 @@ class App extends Component {
   //}
 }
 
-  const Icon = ({icon}) => (
+  /*const Icon = ({icon}) => (
     <i className = {"fa fa-" + icon} >
     </i>
   );
@@ -50,7 +50,39 @@ class App extends Component {
       <Button kind = "default" text = "default" rad = {50} />
     </div>
 
-  );
+  );*/
 
-  render(buttons, document.getElementById('root'));
+  //render(buttons, document.getElementById('root'));
+
+class AlbumsList extends React.Component {
+    state = {
+    isLoading: true,
+    isError: false,
+    albums: null
+    };
+  
+    onError = error => {
+    this.setState({ isError: true });
+    };
+
+  componentDidMount() {
+    fetch("http://jsonplaceholder.typicode.com/albums")
+    .then(response => response.json())
+    .then(albums => this.setState({ isLoading: false, albums }));
+    }
+
+  render(){
+    return this.state.isLoading ? ("Wait for it" ) : (
+    <ul>
+      {this.state.albums.map(album => (
+      <li key={album.id}>{album.name}</li>
+    ))}
+    </ul>
+  );
+  }
+
+}
+
+
+
 
