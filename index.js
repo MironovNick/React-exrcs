@@ -75,7 +75,7 @@ class AlbumsList extends React.Component {
     return this.state.isLoading ? ("Wait for it" ) : (
     <ul>
       {this.state.albums.map(album => (
-      <li key={album.id}>{album.name}</li>
+      <li key={album.id}>{album.title}</li>
     ))}
     </ul>
   );
